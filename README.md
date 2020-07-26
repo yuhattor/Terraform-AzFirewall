@@ -40,7 +40,7 @@
 * ネットワークの基本ガイドのエクササイズ11に従ってください: https://github.com/adicout/lab/tree/master/Network/basic-networking
 * FrontDoorのホスト名（例：myfrontdoor.azurefd.net）を取得し、お好きなインターネットブラウザを使ってアクセスしてください。
   * ウェブサイトはHTTP（TCP 80）ポートにのみ応答するため、HTTPを使用する必要があります： http://myfrontdoor.azurefd.net
-  * Spoke VNET上でWebアプリケーションにアクセスできるはずです。
+  * Spoke VNET上のWebアプリケーションにアクセスできるはずです。
   * アクセスはAzure Front DoorからAzure Firewallに流れていますが、Azure FirewallではNATルールがあり、プライベートIP経由でWebサイトを公開している内部のロードバランサーに通信を送信しています。
 
 ## すべてのリソースをクリンナップする
