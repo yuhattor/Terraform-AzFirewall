@@ -15,7 +15,7 @@ loganalytics = "azfwanalytics"
 location = "japan east"
 
 # Windows VM のadminユーザー
-adminname = "user"
+adminname = "handsonadm"
 
 # Windows VM のサイズ
 vmsize = "Standard_D2s_v3"
