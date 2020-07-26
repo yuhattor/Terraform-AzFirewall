@@ -1,6 +1,6 @@
 ### Hands on においては fixed. Azure Pipelines で上書き
 # 環境の名前 (dev, staging... handson の場合は識別名)
-env = "dev"
+env = "local"
 
 # リソースグループの名前
 rgname = "AzFirewall-Handson-RG"

@@ -1,3 +1,16 @@
+# 特定の開発環境でステートを共有管理する場合は下記のように Blob を使います
+# terraform {
+#   backend "azurerm" {
+#     storage_account_name = "abcd1234"
+#     container_name       = "tfstate"
+#     key                  = "prod.terraform.tfstate"
+# 
+#     # rather than defining this inline, the SAS Token can also be sourced
+#     # from an Environment Variable - more information is available below.
+#     sas_token = "abcdefghijklmnopqrstuvwxyz0123456789..."
+#   }
+# }
+
 provider "azurerm" {
     version = "=2.20.0"
     features {}
