@@ -41,11 +41,11 @@ steps:
     displayName: "Run > terraform init"
     inputs:
       command: "init"
-      backendServiceArm: $(SERVICECONNECTION_NAME)
+      backendServiceArm: $(SUBSCRIPTION_ID)
       backendAzureRmResourceGroupName: "$(tf_state_rg)-$(ENV_NAME)"
       backendAzureRmStorageAccountName: "$(tf_state_sa_name)$(ENV_NAME)"
       backendAzureRmContainerName: $(tf_state_container_name)
-      backendAzureRmKey: "$(tf_environment).terraform.tstate"
+      backendAzureRmKey: "$(tf_environment).terraform.tfstate"
 
   - task: TerraformTaskV1@0
     displayName: "Run > terraform plan"
