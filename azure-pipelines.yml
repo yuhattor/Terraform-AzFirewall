@@ -41,7 +41,9 @@ steps:
     displayName: "Run > terraform init"
     inputs:
       command: "init"
-      backendServiceArm: $(SUBSCRIPTION_ID)
+      workingDirectory: '.'
+      provider: 'azurerm'
+      backendServiceArm: $(SERVICECONNECTION_NAME)
       backendAzureRmResourceGroupName: "$(tf_state_rg)-$(ENV_NAME)"
       backendAzureRmStorageAccountName: "$(tf_state_sa_name)$(ENV_NAME)"
       backendAzureRmContainerName: $(tf_state_container_name)
