@@ -11,11 +11,6 @@
 #   }
 # }
 
-#Set the terraform backend
-terraform {
-  # Backend variables are initialized by Azure DevOps
-  backend "azurerm" {}
-}
 
 provider "azurerm" {
     version = "=2.20.0"

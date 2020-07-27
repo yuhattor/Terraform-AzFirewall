@@ -37,6 +37,11 @@ steps:
         az storage container create --name $(tf_state_container_name) --account-name "$(tf_state_sa_name)$(ENV_NAME)" --account-key $ACCOUNT_KEY
         echo "##vso[task.setvariable variable=tf_state_sa_key]$ACCOUNT_KEY"
 
+  - task: Bash@3
+    inputs:
+      targetType: 'inline'
+      script: cp backend.tf.base backend.tf
+
   - task: TerraformTaskV1@0
     displayName: "Run > terraform init"
     inputs:
