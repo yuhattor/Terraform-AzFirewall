@@ -1,4 +1,4 @@
-### Hands on においては fixed. Azure Pipelines で上書き
+### Hands on においては fixed. Azure Pipelines で上書きされます。
 # 環境の名前 (dev, staging... handson の場合は識別名)
 env = "local"
 
